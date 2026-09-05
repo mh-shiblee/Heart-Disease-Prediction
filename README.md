@@ -330,6 +330,14 @@ xgboost 3.4.1
 
 The versions are pinned where required to maintain compatibility with the serialized machine learning model.
 
+🚀 Live Demo
+
+Live Application: https://heart-disease-prediction-mkb8.onrender.com/
+
+API Documentation: https://heart-disease-prediction-mkb8.onrender.com/docs
+
+The application is deployed as a Docker Web Service on Render and provides a web interface for making heart disease predictions.
+
 ## Disclaimer
 
 This project is developed for educational and demonstration purposes. The prediction produced by the model should not be considered a medical diagnosis or used as a substitute for professional medical advice.
