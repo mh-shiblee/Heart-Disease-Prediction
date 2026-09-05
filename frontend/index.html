@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="/frontend/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Heart Disease Prediction</h1>
+      <p class="subtitle">Enter patient information to get a prediction</p>
+
+      <form id="predictionForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Age</label>
+            <input type="number" id="age" required />
+          </div>
+
+          <div class="form-group">
+            <label>Sex</label>
+            <select id="sex" required>
+              <option value="1">Male</option>
+              <option value="0">Female</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Chest Pain Type (cp)</label>
+            <input type="number" id="cp" min="0" max="3" required />
+          </div>
+
+          <div class="form-group">
+            <label>Resting Blood Pressure</label>
+            <input type="number" id="trestbps" required />
+          </div>
+
+          <div class="form-group">
+            <label>Cholesterol</label>
+            <input type="number" id="chol" required />
+          </div>
+
+          <div class="form-group">
+            <label>Fasting Blood Sugar</label>
+            <select id="fbs" required>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Resting ECG (restecg)</label>
+            <input type="number" id="restecg" min="0" max="2" required />
+          </div>
+
+          <div class="form-group">
+            <label>Maximum Heart Rate</label>
+            <input type="number" id="thalach" required />
+          </div>
+
+          <div class="form-group">
+            <label>Exercise Induced Angina</label>
+            <select id="exang" required>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>ST Depression (oldpeak)</label>
+            <input type="number" id="oldpeak" step="0.1" required />
+          </div>
+
+          <div class="form-group">
+            <label>Slope</label>
+            <input type="number" id="slope" min="0" max="2" required />
+          </div>
+
+          <div class="form-group">
+            <label>Number of Major Vessels (ca)</label>
+            <input type="number" id="ca" min="0" max="4" required />
+          </div>
+
+          <div class="form-group">
+            <label>Thal</label>
+            <input type="number" id="thal" min="0" max="3" required />
+          </div>
+        </div>
+
+        <button type="submit">Predict</button>
+      </form>
+
+      <div id="result" class="result hidden"></div>
+    </div>
+
+    <script src="/frontend/script.js"></script>
+  </body>
+</html>
